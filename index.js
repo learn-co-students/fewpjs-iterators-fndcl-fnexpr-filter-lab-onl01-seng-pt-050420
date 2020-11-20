@@ -6,14 +6,9 @@ function findMatching(array, str)
   return drivers;
 }
 
-function fuzzyMatch(array, str)
-{
+function fuzzyMatch(array, str) {
   let drivers = array.filter(driver => {
-    let slicedDriver = driver.slice(0, str.length + 1);
-    if (slicedDriver.toLowerCase() === str.toLowerCase())
-    {
-      return driver;
-    }
+    driver.toLowerCase().indexOf(str.toLowerCase()) === 0
   });
   return drivers;
 }
