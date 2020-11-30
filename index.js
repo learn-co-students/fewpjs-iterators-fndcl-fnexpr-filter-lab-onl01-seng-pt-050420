@@ -1,24 +1,22 @@
 // Code your solution here
 
 function findMatching(array, string){
-  let x =  array.filter (a =>{
-        return a.toLowerCase() === string.toLowerCase()
-    })
- return x
+    return array.filter (a =>
+         a.toLowerCase() === string.toLowerCase()
+    )
+
 }
 
 function fuzzyMatch(array, string){
-    let x =  array.filter (a =>{
-        return a.slice(0, string.length) === string
-    })
- return x
+    return  array.filter (a =>
+        a.slice(0, string.length) === string
+    )
 }
 
 function matchName(array, string){
-    let x =  array.filter (a =>{
-        return a.name === string
-    })
- return x
+  return array.filter (a =>
+        a.name === string
+    )
 }
 
 const drivers = [
