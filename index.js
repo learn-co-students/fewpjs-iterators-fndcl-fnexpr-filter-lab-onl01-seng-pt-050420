@@ -1,6 +1,6 @@
 function findMatching(drivers, name){
 
-    let match = drivers.filter(driver => {driver.toUpperCase() === name.toUpperCase()})
+    let match = drivers.filter(driver => { return driver.toUpperCase() === name.toUpperCase()})
 
    return match
 }
