@@ -5,7 +5,7 @@
 * Define how the `filter()` method works
 * Demonstrate `filter()`
 * Use `filter()` to return matching results
-
+ 
 ## Introduction
 
 We've all probably had the experience of filtering a selection of choices
